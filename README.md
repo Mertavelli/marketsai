@@ -8,22 +8,6 @@ Built solo, full end-to-end — including domain modelling, prompt-ops, product 
 
 ---
 
-## Screens
-
-### Briefing
-<img src="./static/briefing.png" width="900" />
-
-### Commercial Due Diligence
-<img src="./static/cdd.png" width="900" />
-
-### Startup Exploration
-<img src="./static/startups.png" width="900" />
-
-### Workflows
-<img src="./static/workflows.png" width="900" />
-
----
-
 ## Why this exists
 Investors lose enormous time on pre-DD “screening work”.  
 The bottleneck isn’t capital — it’s analyst hours.
@@ -34,10 +18,11 @@ Markets AI compresses the first 20–40h of analyst labour into ~60 seconds.
 
 ## What Markets AI does
 - generate investment memos (1–2 page)
+- **generate 10-slide Commercial Due Diligence PowerPoint decks** (fast analyst-grade deliverables)
 - extract commercial logic from pitch decks & URLs
 - analyze competitive positioning
 - rank attractiveness of deal vs. market reference class
-- roadmap: founder-side accounts → 2-sided marketplace
+- roadmap: founder-side accounts → two-sided marketplace
 
 This is an actual commercial due diligence engine — not a UI wrapper around GPT.
 
@@ -54,7 +39,7 @@ This is an actual commercial due diligence engine — not a UI wrapper around GP
 
 ## Architecture — high level
 Next.js UI → agent orchestration layer → multiple LLM tools (specialised subagents)  
-Memo writing = synthetic consensus across multiple agent outputs.
+Memo-writing + PPT-gen = synthetic consensus across multiple agent outputs.
 
 ---
 
@@ -74,3 +59,19 @@ Year built: 2025
 
 ## Status
 Active internal product
+
+---
+
+## Screens
+
+### Briefing
+<img src="./static/briefing.png" width="900" />
+
+### Commercial Due Diligence
+<img src="./static/cdd.png" width="900" />
+
+### Startup Exploration
+<img src="./static/startups.png" width="900" />
+
+### Workflows
+<img src="./static/workflows.png" width="900" />
