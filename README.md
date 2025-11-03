@@ -43,6 +43,11 @@ Memo-writing + PPT-gen = synthetic consensus across multiple agent outputs.
 
 ---
 
+## Live / Demo
+- Landing: https://marketsai.io
+
+---
+
 ## Role
 Solo built: research → modelling → product → infra.
 
