@@ -1,0 +1,41 @@
+{
+  "title": "United States and China show significant growth in the Technology sector over recent years",
+  "markets": [
+    {
+      "title": "United States displays robust growth in Technology sector from 2019 to 2020.",
+      "market": "Technology",
+      "country": "United States",
+      "unit": "bn USD",
+      "data": [
+        {
+          "year": 2019,
+          "value": 1040.0
+        },
+        {
+          "year": 2020,
+          "value": 1200.0
+        }
+      ],
+      "source": "https://www.statista.com/statistics/272246/forecast-of-the-us-it-market-revenue/",
+      "source_name": "Statista"
+    },
+    {
+      "title": "China's Technology sector is rapidly expanding, demonstrating steady growth.",
+      "market": "Technology",
+      "country": "China",
+      "unit": "bn USD",
+      "data": [
+        {
+          "year": 2019,
+          "value": 1003.0
+        },
+        {
+          "year": 2020,
+          "value": 1158.0
+        }
+      ],
+      "source": "https://www.statista.com/outlook/tmo/it-services/china",
+      "source_name": "Statista"
+    }
+  ]
+}

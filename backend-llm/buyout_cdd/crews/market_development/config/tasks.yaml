@@ -1,0 +1,45 @@
+get_market_development_task:
+  description: >
+    Use web search (e.g., Statista, reports, market analyses) to research how the market volume of the {industry} sector has developed 
+    over the past years in the countries {country_primary} and {country_secondary}.
+
+    Return a **complete JSON object** matching the following schema, and **nothing else** (no comments, no text):
+
+    {
+      "title": "Germany and Netherlands have shown relatively high growth rates, though slower than European health and beauty market",
+      "markets": [
+        {
+          "title": "Germany has exhibited steady growth in last five years, especially in Health category",
+          "market": "{industry}",
+          "country": "{country_primary}",
+          "unit": "bn EUR",
+          "data": [
+            { "year": 2019, "value": 4.1 },
+            { "year": 2020, "value": 5.3 }
+          ],
+          "source": "https://...",
+          "source_name": "Statista"
+        },
+        {
+          "title": "Netherlands has also seen steady growth, driven primarily by Beauty category",
+          "market": "{industry}",
+          "country": "{country_secondary}",
+          "unit": "bn USD",
+          "data": [
+            { "year": 2019, "value": 6.1 },
+            { "year": 2020, "value": 6.9 }
+          ],
+          "source": "https://...",
+          "source_name": "McKinsey"
+        }
+      ]
+    }
+
+    Requirements:
+    - Always return exactly **two entries** in the "markets" array – one for each country.
+    - If public data is missing, use logic-based extrapolation – but do not skip an entry.
+    - The "market" value must be a **single, concise word** (e.g., "Manufacturing", "Retail", "Logistics").
+
+  expected_output: >
+    A JSON object of type `MarketDevelopmentAll`, containing exactly two complete market development entries with titles.
+  agent: researcher

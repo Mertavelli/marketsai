@@ -1,0 +1,101 @@
+strengths_task:
+  description: >
+    Identify {target_name}’s core strengths across four categories:
+    - Positioning
+    - Infrastructure
+    - Performance
+    - Growth Platform
+
+    Style: internal investment memo (Commercial Due Diligence).
+    
+    Guidelines:
+    - Return 6–7 concise bullet points
+    - Each bullet must start with category label (e.g., "Positioning: ...")
+    - Each point: 8–18 words
+    - Use memo-style tone, no intro/context/fluff
+    - Prioritize structural advantages, KPIs, clear logic
+    - If no data is found in 3 search attempts, use industry reasoning without disclaimer
+
+  expected_output: >
+    A flat list of 6–8 bullet points, each starting with its category (Positioning, Infrastructure, Performance, Growth Platform).
+
+  agent: strengths_agent
+
+
+
+
+opportunities_task:
+  description: >
+    Identify value creation levers for {target_name} after a potential buyout, focused on vertical integration.
+
+    Example levers:
+    - Improve store profitability via standardization or format upgrades
+    - Gain purchasing advantages by internalizing key supply chain parts
+    - Leverage vertical setup to increase operational control and unify the concept
+    - Unlock efficiency or margin gains via insourcing or scale effects
+
+    Style: internal investment memo (Commercial Due Diligence).
+    
+    Guidelines:
+    - Return 2–4 concise bullet points
+    - Each point must start with "Vertical Integration: "
+    - Each bullet: 8–20 words
+    - Use third-person phrasing (e.g., "{target_name} could gain...", "As vertical chain, {target_name} may benefit...")
+    - Focus on actionable, deal-relevant value creation logic
+    - No intro, no context, no sources – only strategic bullet points
+    - Use factual language or infer from market logic (no disclaimers needed)
+
+  expected_output: >
+    A flat list of 2–4 memo-style bullet points, each starting with "Vertical Integration: ".
+
+  agent: opportunities_agent
+  context:
+    - strengths_task
+
+
+
+summary_task:
+  description: >
+    Summarize the commercial investment case in a single, grammatically correct sentence with no more than 18 words.
+    Derive the well-known short name of the target company from its full legal name. 
+
+  expected_output: >
+    A grammatically correct sentence with a maximum of 18 words, following this format:
+    {headquarters_country}-based {industry} company {target_name} seems attractive as an acquisition candidate to {buyer_name}
+
+    Example:
+    German-based health and beauty retail chain DM seems attractive as an acquisition candidate to AUCTUS
+
+  agent: summary_agent
+
+
+
+
+
+
+
+consolidation_task:
+  description: >
+    Fasse die Ergebnisse der vorangegangenen Analyseaufgaben zu einem vollständigen, professionellen InvestmentCase-Objekt zusammen.
+    
+    Die Daten aus den Tasks summary_task, strengths_task und opportunities_task liegen bereits strukturiert vor.
+    Deine Aufgabe ist es, diese Inhalte sauber, vollständig und logisch zu einem finalen JSON-Objekt zusammenzuführen.
+
+    Achte dabei auf folgende Punkte:
+    - Übernimm alle Inhalte wörtlich aus den vorherigen Tasks (nicht neu formulieren)
+    - Struktur und Schlüsselnamen müssen exakt dem oben gezeigten JSON-Schema entsprechen
+    - Keine zusätzlichen Kommentare oder Meta-Informationen hinzufügen
+
+    Wichtig:
+    - Gib nur valide, öffentlich zugängliche Quellen mit vollständiger `https://...`-URL zurück
+
+    Ziel ist ein sauberes, validierbares InvestmentCase-Objekt, das direkt in einer CDD-Dokumentation verwendet werden kann.
+
+  expected_output: >
+    Ein vollständiges InvestmentCase-Objekt im JSON-Format, das alle Felder korrekt zusammenführt und keine doppelten Quellen enthält.
+  context:
+    - summary_task
+    - strengths_task
+    - opportunities_task
+  agent: consolidation_agent
+

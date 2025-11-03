@@ -1,0 +1,33 @@
+{
+  "market": "Technology",
+  "country": "United States",
+  "trends": [
+    {
+      "type": "Consumer health and public health",
+      "description": "Growing interest in wellness and preventative products",
+      "growth_direction": "up"
+    },
+    {
+      "type": "Competition from private label and generics",
+      "description": "Mass-market brands gain share in times of economic uncertainty",
+      "growth_direction": "down"
+    },
+    {
+      "type": "Cloud computing",
+      "description": "Cloud adoption continues to be a major trend as businesses look to enhance scalability and flexibility.",
+      "growth_direction": "up"
+    },
+    {
+      "type": "Artificial Intelligence",
+      "description": "Increasing integration of AI into various sectors, driving innovation and efficiency.",
+      "growth_direction": "up"
+    },
+    {
+      "type": "Economic downturn",
+      "description": "Rising interest rates and inflation impacting technology investments and spending.",
+      "growth_direction": "down"
+    }
+  ],
+  "source": "https://www.deloitte.com/us/en/Industries/tmt/articles/technology-industry-outlook.html",
+  "source_name": "Deloitte"
+}

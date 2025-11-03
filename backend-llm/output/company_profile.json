@@ -1,0 +1,11 @@
+{
+  "company_name": "Apple Inc.",
+  "company_name_presentation": "Apple",
+  "industry": "Technology",
+  "website": "https://www.apple.com",
+  "headquarters_location": "Cupertino, California, USA",
+  "operating_countries": [
+    "United States",
+    "China"
+  ]
+}

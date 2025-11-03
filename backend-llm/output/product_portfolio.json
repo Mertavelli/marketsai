@@ -1,0 +1,63 @@
+{
+  "title": "Apple Inc.'s product portfolio encompasses multiple innovative categories",
+  "value_proposition": "Innovative technology that enhances everyday life",
+  "pillars": [
+    {
+      "name": "Smartphones",
+      "products": [
+        "iPhone 14",
+        "iPhone SE"
+      ],
+      "price_strategy": [
+        "Premium pricing",
+        "Tiered offerings"
+      ]
+    },
+    {
+      "name": "Computers",
+      "products": [
+        "MacBook Air",
+        "iMac"
+      ],
+      "price_strategy": [
+        "Premium pricing",
+        "High-margin products"
+      ]
+    },
+    {
+      "name": "Wearables",
+      "products": [
+        "Apple Watch",
+        "AirPods"
+      ],
+      "price_strategy": [
+        "Mid to premium pricing",
+        "Bundling with services"
+      ]
+    },
+    {
+      "name": "Tablets",
+      "products": [
+        "iPad Pro",
+        "iPad Mini"
+      ],
+      "price_strategy": [
+        "Premium pricing",
+        "Range of models at different prices"
+      ]
+    },
+    {
+      "name": "Services",
+      "products": [
+        "Apple Music",
+        "iCloud"
+      ],
+      "price_strategy": [
+        "Subscription-based pricing",
+        "Free trials to attract users"
+      ]
+    }
+  ],
+  "source": "https://www.accelingo.com/apples-global-strategy/",
+  "source_name": "Accelingo"
+}

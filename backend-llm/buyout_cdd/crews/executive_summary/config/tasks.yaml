@@ -1,0 +1,26 @@
+generate_executive_summary_task:
+  description: >
+    Erstelle eine strukturierte Executive Summary zu folgender Buyout Commercial Due Diligence:
+    {analysis}
+    
+    Die Zusammenfassung soll enthalten:
+    - Drei Key Takeaways (wesentliche Erkenntnisse), jeweils mit 1 bis 8 unterstützenden Argumenten – je nachdem, wie viele relevante Informationen vorhanden sind und sinnvoll zusammengefasst werden können.
+    - Eine finale Empfehlung am Ende (z. B. Investitionsentscheidung oder strategische Einschätzung).
+
+    Nutze ausschließlich Informationen aus dem Firmenprofil, der Marktanalyse und der Risikobewertung.
+  expected_output: >
+    Ein JSON-Objekt im folgenden Format:
+    {
+      "key_takeaways": [
+        {
+          "takeaway": "Kurze prägnante Aussage",
+          "supporting_arguments": [
+            "Argument 1",
+            "Argument 2"
+          ]
+        },
+        ...
+      ],
+      "final_recommendation": "Empfehlung oder Schlussfolgerung"
+    }
+  agent: executive_summary_agent

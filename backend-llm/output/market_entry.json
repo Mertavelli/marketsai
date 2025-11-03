@@ -1,0 +1,66 @@
+{
+  "title": "Emerging Technology Markets Present Diverse Opportunities for Expansion",
+  "evaluated_markets": [
+    {
+      "country": "South Korea",
+      "attractiveness": 9,
+      "ease_of_entry": 7,
+      "focus": "current"
+    },
+    {
+      "country": "Germany",
+      "attractiveness": 8,
+      "ease_of_entry": 6,
+      "focus": "current"
+    },
+    {
+      "country": "Switzerland",
+      "attractiveness": 7,
+      "ease_of_entry": 5,
+      "focus": "current"
+    },
+    {
+      "country": "Sweden",
+      "attractiveness": 7,
+      "ease_of_entry": 8,
+      "focus": "future"
+    },
+    {
+      "country": "United States",
+      "attractiveness": 8,
+      "ease_of_entry": 4,
+      "focus": "current"
+    },
+    {
+      "country": "Canada",
+      "attractiveness": 6,
+      "ease_of_entry": 5,
+      "focus": "current"
+    },
+    {
+      "country": "Estonia",
+      "attractiveness": 5,
+      "ease_of_entry": 8,
+      "focus": "future"
+    },
+    {
+      "country": "Indonesia",
+      "attractiveness": 6,
+      "ease_of_entry": 3,
+      "focus": "future"
+    },
+    {
+      "country": "India",
+      "attractiveness": 8,
+      "ease_of_entry": 2,
+      "focus": "no_potential"
+    },
+    {
+      "country": "Singapore",
+      "attractiveness": 7,
+      "ease_of_entry": 9,
+      "focus": "current"
+    }
+  ],
+  "future_markets_comment": "Emerging markets like Sweden and Estonia may offer growth opportunities as they develop tech talent and infrastructure."
+}

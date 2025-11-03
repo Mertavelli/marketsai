@@ -1,0 +1,27 @@
+get_market_growth_type_task:
+  description: >
+    Analyze the company {company_name} in the country {country}.
+
+    Determine:
+    - Whether the market is considered new or existing for the company
+    - Whether the growth is primarily organic or acquisition-based
+
+    Return a **complete JSON object** in the following structure:
+
+    {
+      "country": "Germany",
+      "new_organic": false,
+      "new_acquisition": false,
+      "existing_organic": true,
+      "existing_acquisition": false,
+      "source_url": "https://..."
+    }
+
+    Use only publicly available sources such as official company websites, press releases, reports, or market studies.
+    All four boolean fields must be set explicitly (true or false).
+
+    ➤ Return only the structured JSON – no comments, no explanation, no free text.
+
+  expected_output: >
+    A valid JSON object of type `MarketGrowthOpportunity`, including country, four boolean flags, and a public source URL.
+  agent: researcher

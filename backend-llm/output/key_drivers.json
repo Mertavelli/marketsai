@@ -1,0 +1,37 @@
+{
+  "summary": "Apple relies on four key drivers to ensure high customer traffic.",
+  "drivers": [
+    {
+      "type": "Location",
+      "description": [
+        "Apple operates stores in high-footfall urban areas and shopping streets.",
+        "Research confirms that location is a key driver of customer choice in this category."
+      ],
+      "source_url": "https://www.ainvest.com/chat/share/what-are-the-key-drivers-of-aapls-growth-e67bd4/"
+    },
+    {
+      "type": "Service",
+      "description": [
+        "Apple invests in professional training and friendliness of store personnel.",
+        "The brand regularly tops rankings for best in-store customer experience."
+      ],
+      "source_url": "https://www.retently.com/blog/apple-nps/"
+    },
+    {
+      "type": "Ecosystem",
+      "description": [
+        "Apple promotes a seamless integration of its products, which creates unparalleled customer loyalty.",
+        "The interoperability of devices enhances user experience and encourages repeat purchases."
+      ],
+      "source_url": "https://cdotimes.com/2024/11/21/case-study-apples-ecosystem-strategy-building-loyalty-and-revenue-through-integration-and-innovation/"
+    },
+    {
+      "type": "Loyalty Programs",
+      "description": [
+        "Apple offers programs like Apple Pay and Apple Card, which foster customer retention and encourage loyalty.",
+        "Studies show that users of these services exhibit significantly higher loyalty and are less likely to switch brands."
+      ],
+      "source_url": "https://www.linkedin.com/pulse/embedded-finance-customer-retention-apples-baas-nazuk-jain--rpxpe"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+get_key_drivers_task:
+  description: >
+    Identify the **Key Drivers** of the company {company_name} that contribute to high customer traffic and retention.
+    
+    Use publicly available sources (e.g., company website, press releases, reports, market analyses) to determine major factors such as:
+    - Location strategy
+    - Pricing approach
+    - Private labels
+    - Customer experience / service
+    - Assortment / brand selection
+    - Marketing & loyalty programs
+
+    Return a **complete JSON object** with the following structure and nothing else:
+
+    {
+      "summary": "{company_name} relies on four key drivers to ensure high customer traffic.",
+      "drivers": [
+        {
+          "type": "Location",
+          "description": [
+            "[Company] operates stores in high-footfall urban areas and shopping streets.",
+            "Research confirms that location is a key driver of customer choice in this category."
+          ],
+          "source_url": "https://..."
+        },
+        {
+          "type": "Service",
+          "description": [
+            "[Company] invests in professional training and friendliness of store personnel.",
+            "The brand regularly tops rankings for best in-store customer experience."
+          ],
+          "source_url": "https://..."
+        }
+      ]
+    }
+
+    ➤ Return **only** the structured JSON – no explanations, no formatting, no commentary.
+
+  expected_output: >
+    A JSON object of type `KeyDrivers`, including a `summary` and a list of exactly four drivers, each with two bullet point `description` entries and one supporting `source_url`.
+  agent: researcher

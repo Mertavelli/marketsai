@@ -1,0 +1,39 @@
+get_market_trends_task:
+  description: >
+    Identifiziere aktuelle und relevante **Wachstumstreiber, Trends und Herausforderungen** im Markt {industry} im Land {country_primary}.
+    
+    Berücksichtige verschiedene Trendtypen wie:
+    - Technologie
+    - Regulatorik / Politik
+    - Demografie / Gesellschaft
+    - Konsumverhalten
+    - Wettbewerb / Substitution
+    - Nachhaltigkeit
+
+    Gib ein JSON-Objekt mit folgender Struktur zurück:
+
+    {
+      "market": "{industry}",
+      "country": "{country_primary}",
+      "trends": [
+        {
+          "type": "Consumer health and public health",
+          "description": "Growing interest in wellness and preventative products",
+          "growth_direction": "up"
+        },
+        {
+          "type": "Competition from private label and generics",
+          "description": "Mass-market brands gain share in times of economic uncertainty",
+          "growth_direction": "down"
+        }
+      ],
+      "source": "https://...",
+      "source_name": "Statista"
+    }
+
+    ➤ Verwende "up", "down" oder "neutral" bei `growth_direction`.
+
+    Gib **nur das JSON-Objekt** zurück, keine Erklärungen oder Kommentare.
+  expected_output: >
+    Ein JSON-Objekt mit Markt, Land, Liste von Trend-Einträgen (Typ, Beschreibung, Richtung) und Quelle.
+  agent: researcher

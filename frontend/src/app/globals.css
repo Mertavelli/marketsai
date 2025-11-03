@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: "Inter", "sans-serif";
+  --font-secondary: "Roboto Mono", "monospace";
+  --color-accent: #0049FF;
+  --color-secondary: #F5F5F5;
+  --color-tertiary: #5C5C5C;
+  --color-border: #EBEBEB;
+  --breakpoint-3xl: 120rem;
+  --breakpoint-4xl: 160rem;
+}
+
+html,
+body {
+  @apply bg-white text-[#5C5C5C];
+}
+
+.heading {
+  @apply text-black font-semibold text-[1.6rem] leading-tight;
+}
+
+.sub-heading {
+  @apply font-semibold text-lg text-black;
+}
+
+.sub-heading-slide {
+  @apply font-semibold text-xs;
+}
+
+
+
+.sub-heading-report {
+  @apply text-black font-semibold text-xl mb-2.5;
+}
+
+.heading-slides {
+  @apply font-semibold text-lg leading-tight;
+}
+
+.card-heading {
+  @apply font-medium text-xl;
+}
+
+.p-gray {
+  @apply text-sm;
+}
+
+.p-black {
+  @apply text-black;
+}
+
+.badge {
+  @apply text-xs font-secondary border border-border w-min px-2 py-1.5 bg-white rounded-sm whitespace-nowrap;
+}
+
+.badge-report {
+  @apply text-xs font-secondary border border-border w-min px-2 py-1 text-center bg-white rounded-sm whitespace-nowrap mb-4;
+}
+
+.card {
+  @apply bg-secondary border border-border p-4 rounded-md;
+}
+
+.rp {
+  @apply font-medium text-sm;
+}
+
+.rh1 {
+  @apply font-medium text-black text-4xl;
+}
+
+.rh2 {
+  @apply font-medium text-black text-lg;
+}
+
+.rh3 {
+  @apply font-semibold text-black text-xl;
+}
+
+.slide {
+  @apply w-full h-full flex flex-col gap-2 px-10 pt-5 pb-8 relative;
+}

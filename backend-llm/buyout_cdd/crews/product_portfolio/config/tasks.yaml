@@ -1,0 +1,40 @@
+get_product_portfolio_task:
+  description: >
+    Analyze the value proposition, strategic pillars, and the product/price structure of the company {company_name}.
+    
+    Research:
+    - The overarching value proposition of the company (max. 10 words)
+    - The main strategic pillars (e.g., Household, Pharmacy, Vitamins, Sports, Beauty)
+    - For each pillar:
+        • Example product types
+        • Pricing strategy as a list of bullet points (e.g., "Low priced", "Mostly private label", ...)
+
+    Return a **fully custom JSON object** (and nothing else) in the following structure:
+
+    {
+      "title": "...", <- Brief statement about {company_name}'s product portfolio structure
+      "value_proposition": "...", 
+      "pillars": [
+        {
+          "name": "...",
+          "products": [ "..." ],
+          "price_strategy": [ "..." ]
+        },
+        ...
+      ],
+      "source": "https://...",
+      "source_name": "..."
+    }
+
+    Notes:
+    - The `title` should briefly summarize the structure and scope of {company_name}'s product portfolio (e.g., "Target’s product portfolio spans five strategic pillars across Health and Beauty")
+    - Do **not** copy any example values from this prompt
+    - All values must be **individually researched** and **specific** to {company_name}
+    - Use only trustworthy and publicly available sources
+    - Include **no more than 5 strategic pillars**
+    - Return **only** the JSON – no explanations, no example data, no text outside the JSON
+
+  expected_output: >
+    A JSON object of type `ProductPortfolio`, including a tailored title referring to the product portfolio, a value proposition (max. 10 words), up to 5 company-specific product pillars with examples and pricing strategies, and a valid source.
+
+  agent: researcher

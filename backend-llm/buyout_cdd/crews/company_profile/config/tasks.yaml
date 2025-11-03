@@ -1,0 +1,50 @@
+extract_company_task:
+  description: >
+    You will receive a conversation transcript in the format below:
+
+    {messages}
+
+    Analyze these messages to identify the **company** being discussed.
+    
+    Return only the **full legal name** of the company, with suffix (e.g., GmbH, AG, Inc., Ltd.), if available. 
+    Do not include any explanation, quotes, or additional context.
+
+  expected_output: >
+    The full legal name of the company, e.g., “Tesla, Inc.” or “Siemens AG”.
+
+  agent: researcher
+
+
+get_company_profile_task:
+  description: >
+    Based on the company mentioned in the following conversation:
+
+    {messages}
+
+    Research and return a structured profile of the company including:
+
+    - **company_name**: Full legal name of the company (incl. suffix).
+    - **company_name_presentation**: A short, presentation-ready name without legal suffix or extra words. 
+      Example: "Andreas Stihl AG & Co. KG" → "Stihl"
+    - **industry**: The main industry in 1–2 words (e.g., "Machinery", "E-commerce").
+    - **website**: Official website URL.
+    - **headquarters_location**: Headquarters city and country.
+    - **operating_countries**: The 2 most relevant countries where the company operates.
+
+    All information must be accurate, clear, and correctly formatted. Use only trustworthy and up-to-date public sources.
+
+    Output must be a **valid JSON object** with exactly the following keys.
+
+  expected_output: >
+    {
+      "company_name": "...",
+      "company_name_presentation": "...",
+      "industry": "...",
+      "website": "...",
+      "headquarters_location": "...",
+      "operating_countries": ["...", "..."]
+    }
+
+  agent: researcher
+  context:
+    - extract_company_task

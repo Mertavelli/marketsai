@@ -1,0 +1,29 @@
+market_entry_assessment_task:
+  description: >
+    Research publicly available information to identify countries that are particularly attractive for expansion in the {industry} market.
+
+    Evaluate **at least 10 countries**, ideally more, based on the following criteria:
+    - **Attractiveness**: Market potential, size, and growth prospects (scale 1–9)
+    - **Ease of Entry**: Regulatory landscape, competitive intensity, and market accessibility (scale 1–9)
+    - **Focus**: Whether the company should currently target this country, consider it for the future, or exclude it due to lack of potential 
+      (choose from: "current", "future", "no_potential")
+
+    Important:
+    - Each country must have a **unique combination** of `attractiveness` and `ease_of_entry`.
+    - No two countries may share the exact same (attractiveness, ease_of_entry) pair.
+
+    Additionally, provide:
+    - **Title**: A concise summary sentence to use as a headline for a presentation slide, e.g., 
+      "Northern European markets appear most promising for {company_name}" – this should reflect the main strategic insight.
+    - **Future Markets Comment**: A **short phrase** (max. one sentence) explaining the rationale behind selecting future markets. 
+      For example: "Managerial resources, financial priorities, and strategic fit."
+
+    Return a **valid JSON object** that adheres to the structure of the `MarketEntryAssessment` model.
+
+  expected_output: >
+    A JSON object with:
+    - `title` as a concise summary sentence
+    - `evaluated_markets` as a list of country assessments
+    - `future_markets_comment` as a brief rationale for future focus countries
+
+  agent: researcher
