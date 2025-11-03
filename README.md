@@ -8,6 +8,22 @@ Built solo, full end-to-end — including domain modelling, prompt-ops, product 
 
 ---
 
+## Screens
+
+### Briefing
+<img src="./static/briefing.png" width="900" />
+
+### Commercial Due Diligence
+<img src="./static/cdd.png" width="900" />
+
+### Startup Exploration
+<img src="./static/startups.png" width="900" />
+
+### Workflows
+<img src="./static/workflows.png" width="900" />
+
+---
+
 ## Why this exists
 Investors lose enormous time on pre-DD “screening work”.  
 The bottleneck isn’t capital — it’s analyst hours.
@@ -39,19 +55,6 @@ This is an actual commercial due diligence engine — not a UI wrapper around GP
 ## Architecture — high level
 Next.js UI → agent orchestration layer → multiple LLM tools (specialised subagents)  
 Memo writing = synthetic consensus across multiple agent outputs.
-
----
-
-## Screens
-
-### Deal workspace
-<img src="./screens/workspace.png" width="900" />
-
-### AI analyst output
-<img src="./screens/memo.png" width="900" />
-
-### Competitive analysis
-<img src="./screens/competition.png" width="900" />
 
 ---
 
